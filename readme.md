@@ -1,4 +1,4 @@
-# Equinor enhacement proposals
+# Equinor Enhacement Proposals
 
 ## Motivation (why)
 
@@ -29,7 +29,7 @@ This is absolutely open, my first thought was something similar to [PEP](https:/
 
 ## Spread the word, speak up, give feedback.
 
-If this idea resonates with you, feel free to communicate with others in this [Slack channel: #equinor_enhacement_proposals](https://join.slack.com/share/I0110F80XNY/aT7yj19M8UmBKZcW6i2OM7s6/enQtMTAzNDUxODAzMTc4MC0wODA1OWI0NDA3MDgyZDk4NmE4MDJkNTM0YzZmZjgzNGYyMTBlNjZkZjVhOWI1MGU3MGU5MGE5MTQxODM4YWY0) , or 
+If this idea resonates with you, feel free to communicate with others in this [Slack channel: #equinor_enhacement_proposals](https://equinor.slack.com/archives/C010N6VAFTL) , or 
 if you want a more thorough approach, open an issue in this repository with your thoughts / opinions.
 
 If you want a private comm channel, feel free to reach me at jgaz@equinor.com on Email/Slack/Teams.
