@@ -6,6 +6,7 @@ Drawreader: Piping and instrumentation drawing reader
 - Status: Request for comments
 - Created: 06-04-2020
 - Core Technologies: python, deep learning, vision, P&ID, graph databases
+- Repo: https://github.com/jgaz/pid_reader
 
 ## Abstract
 Piping and instrumentation drawings are fascinating and a core discipline in many different 
@@ -51,13 +52,12 @@ training performed in the DrawReaderTrainer.
 This component will be responsible for generating the ML models that will eventually turn PGNs into a graph.
 
 There are four different tasks that these models will need to perform:
-- Symbol location and identification: X,Y,Height,Width,Type.
-- Pipelines: Start(X,Y), End(X,Y). Connected symbols (Symbol1, Symbol2, Pipe Vertex).
-- Annotations location and content: X,Y,Height,Width,Text.
-- Symbol and pipelines annotation association: (Symbol1,Annotation3),(Pipeline1,Annotation2)
+- Symbol location and identification: X,Y,Height,Width,Type, probably a Yolo net for this.
+- Annotations location and content: X,Y,Height,Width,Text, might be the same Yolo net.
+- Symbol and pipelines annotation association: (Symbol1,Annotation3),(Pipeline1,Annotation2), this should be straight forward knowing the symbol and annotation coordinates and types/contents.
+- Pipelines: Start(X,Y), End(X,Y). Connected symbols (Symbol1, Symbol2, Pipe Vertex), absolutely no clue, research needed.
 
-There are quite good models in the literature for tasks 1 and 3, task 4 looks related with 1 and 3 and might be
-done in the same model, but pipeline identification seems to me like a new problem.
+There are quite good models in the literature for tasks 1 and 2, but pipeline identification seems to me like a new problem.
  
 The models will be tested for accuracy, hopefully architectures that can learn fast a new set of symbols will be found 
 as the symbol library is usually not standard. 
